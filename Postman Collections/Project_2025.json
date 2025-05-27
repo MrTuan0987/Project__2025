@@ -24,8 +24,7 @@
 											"});\r",
 											"\r",
 											"pm.test(\"Hiện thông báo lỗi Capcha\", ()=>{\r",
-											"    pm.expect(pm.response.text()).to.include(`Có lỗi trong quá trình \r",
-											"    kiểm tra captcha`)\r",
+											"    pm.expect(pm.response.text()).to.include(`Có lỗi trong quá trình kiểm tra captcha`)\r",
 											"})\r",
 											""
 										],
