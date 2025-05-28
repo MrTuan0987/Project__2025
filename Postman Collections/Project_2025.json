@@ -17,7 +17,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "7aabdae5-d66f-424a-bf12-aa9f1b3f9cab",
+										"id": "32343dab-026b-403b-9e71-af28643d5cc0",
 										"exec": [
 											"pm.test(\"Status code is 4xx\", function (){\r",
 											"    pm.expect(pm.response.code).to.be.oneOf([400, 401, 404]);;\r",
