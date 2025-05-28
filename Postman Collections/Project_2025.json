@@ -4353,6 +4353,7 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "8dcc659a-c080-414e-9f31-0b08d950f4ea",
 								"exec": [
 									"pm.test(\"Status code is 200: \", ()=>{\r",
 									"    pm.response.to.have.status(200)\r",
@@ -4364,12 +4365,11 @@
 									"    pm.expect(jsonData.name).to.eql(\"Bia Hanoi Premium - Thùng 24 lon 330ml\")\r",
 									"    pm.expect(jsonData.short_url).to.eql(\"https://tiki.vn/product-p153885246.html?spid=153885247\")\r",
 									"    pm.expect(jsonData.price).to.eql(349000)\r",
-									"\r",
-									"})"
+									"})\r",
+									""
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "8dcc659a-c080-414e-9f31-0b08d950f4ea"
+								"packages": {}
 							}
 						}
 					],
