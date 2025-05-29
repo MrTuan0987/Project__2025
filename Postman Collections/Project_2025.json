@@ -2802,15 +2802,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "81a554fb-830f-4ed4-b997-918aba7bd997",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "81a554fb-830f-4ed4-b997-918aba7bd997"
+										"packages": {}
 									}
 								}
 							],
@@ -2851,15 +2850,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "d49e697d-6025-493d-8cc0-c50f39edfa37",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "d49e697d-6025-493d-8cc0-c50f39edfa37"
+										"packages": {}
 									}
 								}
 							],
@@ -2868,7 +2866,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "GET",
 								"header": [
 									{
 										"key": "x-access-token",
@@ -3457,9 +3455,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "af2e86ef-0a15-4621-900d-07c166fc254c",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"let jsonData = pm.response.json().data\r",
@@ -3470,8 +3469,7 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "af2e86ef-0a15-4621-900d-07c166fc254c"
+										"packages": {}
 									}
 								}
 							],
@@ -3512,9 +3510,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "ca894ef1-ffdf-46b0-a894-7f59c160bcd5",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"let jsonData = pm.response.json().data\r",
@@ -3525,8 +3524,7 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "ca894ef1-ffdf-46b0-a894-7f59c160bcd5"
+										"packages": {}
 									}
 								}
 							],
