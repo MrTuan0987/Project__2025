@@ -310,18 +310,18 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "2a781571-7bd6-4df1-ba3e-2f17611d57df",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", function (){\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);;\r",
-											"});\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
+											"})\r",
 											"\r",
 											"\r",
 											"\r",
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "2a781571-7bd6-4df1-ba3e-2f17611d57df"
+										"packages": {}
 									}
 								}
 							],
@@ -330,7 +330,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "GET",
 								"header": [],
 								"body": {
 									"mode": "raw",
