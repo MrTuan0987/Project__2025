@@ -5656,15 +5656,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "c1a747e0-dddf-4d72-a2a5-fc84354e3f69",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "c1a747e0-dddf-4d72-a2a5-fc84354e3f69"
+										"packages": {}
 									}
 								}
 							],
