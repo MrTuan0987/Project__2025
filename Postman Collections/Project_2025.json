@@ -4820,9 +4820,10 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "cf223113-e5e1-4eb5-a3fc-92acd06dd130",
 								"exec": [
-									"pm.test(\"Status code is 4xx \", ()=>{\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+									"pm.test(\"Status code is 400\", function (){\r",
+									"    pm.response.to.have.status(400)\r",
 									"})\r",
 									"\r",
 									"pm.test(\"Hiện thông báo thiếu token\", ()=>{    \r",
@@ -4830,8 +4831,7 @@
 									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "cf223113-e5e1-4eb5-a3fc-92acd06dd130"
+								"packages": {}
 							}
 						}
 					],
