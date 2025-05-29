@@ -6073,7 +6073,7 @@
 								"auth": {
 									"type": "noauth"
 								},
-								"method": "POST",
+								"method": "DELETE",
 								"header": [
 									{
 										"key": "x-access-token",
