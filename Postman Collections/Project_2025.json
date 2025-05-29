@@ -107,7 +107,7 @@
 									"script": {
 										"id": "ed4ac2ae-e364-4913-98c1-3c7b2df6bff5",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
+											"pm.test(\"Status code is 401\", ()=>{\r",
 											"    pm.response.to.have.status(401)\r",
 											"})\r",
 											"\r",
@@ -147,9 +147,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "bd76faa2-91b3-4e81-826d-6669386746b8",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện message 'Vui lòng nhập email'\", function () {\r",
@@ -158,8 +159,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "bd76faa2-91b3-4e81-826d-6669386746b8"
+										"packages": {}
 									}
 								}
 							],
@@ -191,8 +191,8 @@
 									"script": {
 										"id": "62a2d8d0-7fef-4bb3-a0ee-29140a50edbb",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện message 'Vui lòng nhập pass'\", function () {\r",
