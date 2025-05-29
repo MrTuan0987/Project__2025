@@ -2197,26 +2197,26 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "df7b1ba0-6450-4926-b5bd-be0d1b7135ec",
 										"exec": [
-											"pm.test(\"Status code khác 200\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404, 500]);\r",
+											"pm.test(\"Status code khác 404\", ()=>{\r",
+											"    pm.response.to.have.status(404)\r",
 											"})\r",
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "df7b1ba0-6450-4926-b5bd-be0d1b7135ec"
+										"packages": {}
 									}
 								},
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "ec81b09a-7fdb-48d2-878e-cc733622d5ad",
 										"exec": [
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "ec81b09a-7fdb-48d2-878e-cc733622d5ad"
+										"packages": {}
 									}
 								}
 							],
@@ -2225,7 +2225,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "POST",
 								"header": [
 									{
 										"key": "Content-Type",
