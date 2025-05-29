@@ -5060,15 +5060,14 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "3d890d8a-6b50-4092-ab73-e59c040dd56d",
 								"exec": [
-									"pm.test(\"Status code is 4xx\", ()=>{\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-									"})\r",
-									""
+									"pm.test(\"Status code is 404\", function (){\r",
+									"    pm.response.to.have.status(404)\r",
+									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "3d890d8a-6b50-4092-ab73-e59c040dd56d"
+								"packages": {}
 							}
 						}
 					],
