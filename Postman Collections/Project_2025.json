@@ -5118,15 +5118,14 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "57539975-497f-44c3-9568-d94c2d201ffd",
 								"exec": [
-									"pm.test(\"Status code is 4xx\", ()=>{\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-									"})\r",
-									""
+									"pm.test(\"Status code is 404\", function (){\r",
+									"    pm.response.to.have.status(404)\r",
+									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "57539975-497f-44c3-9568-d94c2d201ffd"
+								"packages": {}
 							}
 						}
 					],
