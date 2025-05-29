@@ -231,9 +231,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "62a2d8d0-7fef-4bb3-a0ee-29140a50edbb",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện message 'Vui lòng nhập pass'\", function () {\r",
@@ -242,8 +243,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "62a2d8d0-7fef-4bb3-a0ee-29140a50edbb"
+										"packages": {}
 									}
 								}
 							],
