@@ -3983,15 +3983,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "f9426d14-cdbb-4d55-a960-fd6012a2078e",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "f9426d14-cdbb-4d55-a960-fd6012a2078e"
+										"packages": {}
 									}
 								}
 							],
@@ -4223,15 +4222,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "7b5deb04-a9b6-4e09-9434-26a7c077d179",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "7b5deb04-a9b6-4e09-9434-26a7c077d179"
+										"packages": {}
 									}
 								}
 							],
