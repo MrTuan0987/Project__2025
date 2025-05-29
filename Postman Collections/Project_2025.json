@@ -273,15 +273,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "a56b46ff-335a-4524-8207-b18310178e68",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", ()=>{\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "a56b46ff-335a-4524-8207-b18310178e68"
+										"packages": {}
 									}
 								}
 							],
