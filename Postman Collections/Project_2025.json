@@ -4980,8 +4980,9 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "ee58a2fd-9c19-4662-8420-03c14b88f736",
 								"exec": [
-									"pm.test(\"Status code is 4xx \", ()=>{\r",
+									"pm.test(\"Status code is 401 \", ()=>{\r",
 									"    pm.response.to.have.status(401)\r",
 									"})\r",
 									"\r",
@@ -4990,8 +4991,7 @@
 									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "ee58a2fd-9c19-4662-8420-03c14b88f736"
+								"packages": {}
 							}
 						}
 					],
