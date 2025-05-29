@@ -2155,26 +2155,25 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "0b01dd78-0468-4249-bc7a-0868034e3765",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "0b01dd78-0468-4249-bc7a-0868034e3765"
+										"packages": {}
 									}
 								},
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "16c7eb73-4a16-4d3b-b9fb-0a2be016c2ce",
 										"exec": [
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "16c7eb73-4a16-4d3b-b9fb-0a2be016c2ce"
+										"packages": {}
 									}
 								}
 							],
