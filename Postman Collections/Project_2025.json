@@ -1316,7 +1316,7 @@
 								"id": "a5d71f0b-7f40-44d7-8f4e-59a59300297d",
 								"exec": [
 									"pm.sendRequest({\r",
-									"    url: 'https://tiki.vn/api/v2/intended_cart/sellers/113115/items/62630e91-3c7e-11f0-9375-aef2dc5bccd4/quantity',\r",
+									"    url: 'https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity',\r",
 									"    method: 'PUT',\r",
 									"    header: [\r",
 									"        { key: 'Content-Type', value: 'application/json' },       \r",
@@ -3633,7 +3633,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/62630e91-3c7e-11f0-9375-aef2dc5bccd4/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						},
@@ -3709,7 +3709,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/62630e91-3c7e-11f0-9375-aef2dc5bccd4/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						},
