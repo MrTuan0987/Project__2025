@@ -5525,7 +5525,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "DELETE",
+								"method": "POST",
 								"header": [
 									{
 										"key": "x-access-token",
@@ -6056,7 +6056,7 @@
 								"auth": {
 									"type": "noauth"
 								},
-								"method": "DELETE",
+								"method": "POST",
 								"header": [
 									{
 										"key": "x-access-token",
