@@ -3738,9 +3738,8 @@
 									"script": {
 										"id": "b1109d01-691b-4ab6-b7f1-6fee90666fee",
 										"exec": [
-											"pm.test(\"Status code is 400, 404\", ()=>{\r",
-											"    pm.response.to.have.status(400) || pm.response.to.have.status(404) \r",
-											"    \r",
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"let jsonData = pm.response.json()\r",
