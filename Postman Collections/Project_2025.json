@@ -5813,8 +5813,9 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "c6bc702f-7b4f-4eab-b5a9-b8ce345c5487",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
+											"pm.test(\"Status code is 401\", ()=>{\r",
 											"    pm.response.to.have.status(401)\r",
 											"})\r",
 											"\r",
@@ -5825,8 +5826,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "c6bc702f-7b4f-4eab-b5a9-b8ce345c5487"
+										"packages": {}
 									}
 								}
 							],
@@ -6011,9 +6011,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "b6fc5938-f6e7-4098-b61d-1589f09b95fb",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
 											"})\r",
 											"\r",
 											"let jsonData = pm.response.json();\r",
@@ -6023,8 +6024,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "b6fc5938-f6e7-4098-b61d-1589f09b95fb"
+										"packages": {}
 									}
 								}
 							],
@@ -6048,9 +6048,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "8696fb15-dd37-4e9a-ab4c-f3d1b2cc7119",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
 											"})\r",
 											"\r",
 											"let jsonData = pm.response.json();\r",
@@ -6060,8 +6061,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "8696fb15-dd37-4e9a-ab4c-f3d1b2cc7119"
+										"packages": {}
 									}
 								}
 							],
