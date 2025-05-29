@@ -6173,8 +6173,9 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "9ac8bb0f-a040-466b-b94f-eb0ea933f822",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
+											"pm.test(\"Status code is 401\", ()=>{\r",
 											"    pm.response.to.have.status(401)\r",
 											"})\r",
 											"\r",
@@ -6185,8 +6186,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "9ac8bb0f-a040-466b-b94f-eb0ea933f822"
+										"packages": {}
 									}
 								}
 							],
@@ -6297,6 +6297,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "4beff80a-a924-47f3-99cd-7ddc96e994f4",
 										"exec": [
 											"pm.test(\"Status code is 200\", ()=>{\r",
 											"    pm.response.to.have.status(200)\r",
@@ -6309,8 +6310,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "4beff80a-a924-47f3-99cd-7ddc96e994f4"
+										"packages": {}
 									}
 								}
 							],
