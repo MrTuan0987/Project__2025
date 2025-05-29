@@ -4467,15 +4467,14 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "2f5c0d4e-0d22-4c78-919d-5f0def83cde4",
 								"exec": [
-									"pm.test(\"Status code is 4xx \", ()=>{\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-									"})\r",
-									""
+									"pm.test(\"Status code is 404\", function (){\r",
+									"    pm.response.to.have.status(404)\r",
+									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "2f5c0d4e-0d22-4c78-919d-5f0def83cde4"
+								"packages": {}
 							}
 						}
 					],
@@ -4484,7 +4483,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PATCH",
 						"header": [
 							{
 								"key": "Content-Type",
