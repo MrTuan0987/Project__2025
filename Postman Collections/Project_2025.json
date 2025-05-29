@@ -542,10 +542,9 @@
 									"script": {
 										"id": "4f065207-fcb6-496c-bf2c-cec390f37ca8",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
-											"\r",
 											"\r",
 											"pm.test(\"Body trả về có existed = false\", function () {\r",
 											"    let jsonData = pm.response.json();\r",
@@ -586,8 +585,8 @@
 									"script": {
 										"id": "63fb7207-3e16-457a-92f0-bae36cb388a2",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện thông báo not found\", function () {\r",
@@ -629,9 +628,9 @@
 									"script": {
 										"id": "f9053f03-57e2-440d-af0e-3aa9cc544a5b",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", function (){\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);;\r",
-											"});\r",
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})\r",
 											"\r",
 											"pm.test(\"Hiện thông báo not found\", function () {\r",
 											"    let jsonData = pm.response.json();\r",
@@ -653,7 +652,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "DELETE",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -741,9 +740,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "611c0bd8-d1d5-4b1c-b60c-fe02424a8f14",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện message 'Vui lòng nhập pass'\", function () {\r",
@@ -752,8 +752,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "611c0bd8-d1d5-4b1c-b60c-fe02424a8f14"
+										"packages": {}
 									}
 								}
 							],
@@ -767,6 +766,46 @@
 								"body": {
 									"mode": "raw",
 									"raw": "{\"grant_type\":\"password\",\"email\":\"0346569108\",\"password\":\"\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"MGFiYTFkZGMtZWZjYy00NjlkLTg2YjYtNTliNzQ5MWU0ZWJj\",\"type\":\"puzzle\"}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tiki.vn/api/v3/tokens"
+							},
+							"response": []
+						},
+						{
+							"name": "Nhập sai Pass_4xx",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 4xx\", ()=>{\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"})\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"id": "fdc0c638-722a-4a48-8ce7-8fd220a5d74f"
+									}
+								}
+							],
+							"id": "41b20c7a-16dc-4eb8-a650-6c177a10ba1d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"grant_type\":\"password\",\"email\":\"0346569108\",\"password\":\"1111\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"MGFiYTFkZGMtZWZjYy00NjlkLTg2YjYtNTliNzQ5MWU0ZWJj\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -845,46 +884,6 @@
 								"body": {
 									"mode": "raw",
 									"raw": "{\"grant_type\":\"password\",\"email\":\"0346569108\",\"password\":\"Tuan0987\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"MGFiYTFkZGMtZWZjYy00NjlkLTg2YjYtNTliNzQ5MWU0ZWJj\",\"type\":\"puzzle\"}}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://tiki.vn/api/v3/tokens"
-							},
-							"response": []
-						},
-						{
-							"name": "Nhập sai Pass_4xx",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript",
-										"packages": {},
-										"id": "fdc0c638-722a-4a48-8ce7-8fd220a5d74f"
-									}
-								}
-							],
-							"id": "41b20c7a-16dc-4eb8-a650-6c177a10ba1d",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\"grant_type\":\"password\",\"email\":\"0346569108\",\"password\":\"1111\",\"device_id\":\"67b095fe-a231-15f4-ee5d-892478891aaf\",\"captcha\":{\"status\":\"passed\",\"seccode\":\"MGFiYTFkZGMtZWZjYy00NjlkLTg2YjYtNTliNzQ5MWU0ZWJj\",\"type\":\"puzzle\"}}",
 									"options": {
 										"raw": {
 											"language": "json"
