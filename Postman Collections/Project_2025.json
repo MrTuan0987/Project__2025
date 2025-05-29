@@ -3771,7 +3771,6 @@
 										"exec": [
 											"pm.test(\"Status code is 400\", ()=>{\r",
 											"    pm.response.to.have.status(400); \r",
-											"    \r",
 											"})\r",
 											"\r",
 											"let jsonData = pm.response.json()\r",
