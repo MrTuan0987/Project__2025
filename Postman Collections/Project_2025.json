@@ -4011,8 +4011,8 @@
 									"script": {
 										"id": "259f4989-f385-4f6f-aa69-43647600ec3a",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", ()=>{\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											""
 										],
