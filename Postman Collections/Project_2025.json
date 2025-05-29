@@ -4259,15 +4259,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "4a49552f-9340-4db6-9bab-c2a8599802b5",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "4a49552f-9340-4db6-9bab-c2a8599802b5"
+										"packages": {}
 									}
 								}
 							],
@@ -4276,7 +4275,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "GET",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -4419,15 +4418,14 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "4047049e-8074-4e82-8aec-0fe6b651f999",
 								"exec": [
-									"pm.test(\"Status code is 4xx\", ()=>{\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-									"})\r",
-									""
+									"pm.test(\"Status code is 404\", function (){\r",
+									"    pm.response.to.have.status(404)\r",
+									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "4047049e-8074-4e82-8aec-0fe6b651f999"
+								"packages": {}
 							}
 						}
 					],
