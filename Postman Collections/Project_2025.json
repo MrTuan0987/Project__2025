@@ -1095,15 +1095,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "e7369bcf-3dfe-4fab-8c69-735526ed34a4",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-											"})\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "e7369bcf-3dfe-4fab-8c69-735526ed34a4"
+										"packages": {}
 									}
 								}
 							],
@@ -1130,15 +1129,14 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "85b9a74f-b067-47dc-8b72-d99b3b08e4cb",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", function (){\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);;\r",
-											"});\r",
-											""
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
+											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "85b9a74f-b067-47dc-8b72-d99b3b08e4cb"
+										"packages": {}
 									}
 								}
 							],
@@ -1380,15 +1378,14 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "186e157e-6065-4f68-a048-f213672c9541",
 								"exec": [
-									"pm.test(\"Status code is 4xx\", ()=>{\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-									"})\r",
-									""
+									"pm.test(\"Status code is 404\", function (){\r",
+									"    pm.response.to.have.status(404)\r",
+									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "186e157e-6065-4f68-a048-f213672c9541"
+								"packages": {}
 							}
 						}
 					],
@@ -1430,15 +1427,14 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "ae1a00b0-d9d2-4629-ab04-d88fecb69837",
 								"exec": [
-									"pm.test(\"Status code is 4xx\", ()=>{\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
-									"})\r",
-									""
+									"pm.test(\"Status code is 404\", function (){\r",
+									"    pm.response.to.have.status(404)\r",
+									"})"
 								],
 								"type": "text/javascript",
-								"packages": {},
-								"id": "ae1a00b0-d9d2-4629-ab04-d88fecb69837"
+								"packages": {}
 							}
 						}
 					],
