@@ -3757,7 +3757,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/87b879ea-2fe7-11f0-b324-a6c167f0ee49/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						},
@@ -3806,7 +3806,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/87b879ea-2fe7-11f0-b324-a6c167f0ee49/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						},
@@ -3816,6 +3816,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "85e0b67e-3029-49a8-9b32-cb64bb5992ff",
 										"exec": [
 											"pm.test(\"Status code is 4xx\", ()=>{\r",
 											"    pm.response.to.have.status(401)\r",
@@ -3827,8 +3828,7 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "85e0b67e-3029-49a8-9b32-cb64bb5992ff"
+										"packages": {}
 									}
 								}
 							],
@@ -3855,7 +3855,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/81354/items/cec3c27f-1fdb-11f0-a3d9-b6f79a025046/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						},
@@ -3865,6 +3865,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "55a93e44-70e0-4ec6-8619-8c4fc1a5541b",
 										"exec": [
 											"pm.test(\"Status code is 4xx\", ()=>{\r",
 											"    pm.response.to.have.status(401)\r",
@@ -3878,8 +3879,7 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "55a93e44-70e0-4ec6-8619-8c4fc1a5541b"
+										"packages": {}
 									}
 								}
 							],
@@ -3906,7 +3906,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/81354/items/cec3c27f-1fdb-11f0-a3d9-b6f79a025046/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						},
@@ -3916,6 +3916,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "4d999eb8-61cd-4dee-9841-f3072992bfc6",
 										"exec": [
 											"pm.test(\"Status code is 4xx\", ()=>{\r",
 											"    pm.response.to.have.status(401)\r",
@@ -3929,8 +3930,7 @@
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "4d999eb8-61cd-4dee-9841-f3072992bfc6"
+										"packages": {}
 									}
 								}
 							],
@@ -3956,7 +3956,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/81354/items/cec3c27f-1fdb-11f0-a3d9-b6f79a025046/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						},
@@ -4010,6 +4010,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "259f4989-f385-4f6f-aa69-43647600ec3a",
 										"exec": [
 											"pm.test(\"Status code is 4xx\", ()=>{\r",
 											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
@@ -4017,8 +4018,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "259f4989-f385-4f6f-aa69-43647600ec3a"
+										"packages": {}
 									}
 								}
 							],
@@ -4045,7 +4045,7 @@
 										}
 									}
 								},
-								"url": "https://tiki.vn/api/v2/intended_cart/sellers/81354/items/cec3c27f-1fdb-11f0-a3d9-b6f79a025046/quantity"
+								"url": "https://tiki.vn/api/v2/intended_cart/sellers/113115/items/704cfb2e-3c87-11f0-af97-5661c631220f/quantity"
 							},
 							"response": []
 						}
