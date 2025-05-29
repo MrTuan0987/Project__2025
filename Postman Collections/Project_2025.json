@@ -5520,9 +5520,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "b0173b5b-c7f9-4a01-b23c-b2b9b4155941",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", function () {\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);;\r",
+											"pm.test(\"Status code is 404\", function (){\r",
+											"    pm.response.to.have.status(404)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Hiện thông báo Route Not Found\", function () {\r",
@@ -5532,8 +5533,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "b0173b5b-c7f9-4a01-b23c-b2b9b4155941"
+										"packages": {}
 									}
 								}
 							],
@@ -5542,7 +5542,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "POST",
+								"method": "DELETE",
 								"header": [
 									{
 										"key": "x-access-token",
