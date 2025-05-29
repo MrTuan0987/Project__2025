@@ -411,9 +411,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "cc5691fc-0978-4ccc-bc7a-b9af74e9f909",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Body trả về có existed = false\", function () {\r",
@@ -423,8 +424,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "cc5691fc-0978-4ccc-bc7a-b9af74e9f909"
+										"packages": {}
 									}
 								}
 							],
@@ -454,9 +454,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "1ed91db6-93cb-4352-a85d-9b22268968f6",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Body trả về có existed = false\", function () {\r",
@@ -466,8 +467,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "1ed91db6-93cb-4352-a85d-9b22268968f6"
+										"packages": {}
 									}
 								}
 							],
@@ -497,9 +497,10 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "736cad0a-919b-4aaf-b51b-7a848d68556b",
 										"exec": [
-											"pm.test(\"Status code is 4xx\", ()=>{\r",
-											"    pm.expect(pm.response.code).to.be.oneOf([400, 404]);\r",
+											"pm.test(\"Status code is 400\", function (){\r",
+											"    pm.response.to.have.status(400)\r",
 											"})\r",
 											"\r",
 											"pm.test(\"Body trả về có existed = false\", function () {\r",
@@ -509,8 +510,7 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "736cad0a-919b-4aaf-b51b-7a848d68556b"
+										"packages": {}
 									}
 								}
 							],
