@@ -2489,6 +2489,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "aad844f3-91dd-429d-b37c-26e4e1dc9803",
 										"exec": [
 											"pm.test(\"Status code is 200\", ()=>{\r",
 											"    pm.response.to.have.status(200)\r",
@@ -2504,19 +2505,18 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "aad844f3-91dd-429d-b37c-26e4e1dc9803"
+										"packages": {}
 									}
 								},
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "52e9b26d-428f-4320-b082-04e89ce51371",
 										"exec": [
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "52e9b26d-428f-4320-b082-04e89ce51371"
+										"packages": {}
 									}
 								}
 							],
