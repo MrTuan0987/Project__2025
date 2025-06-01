@@ -6373,7 +6373,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6c620973-8252-4c40-8890-90a3db90566c",
+				"id": "79c04e88-6f53-4783-8d46-bb36becc3025",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -6381,7 +6381,7 @@
 					"pm.collectionVariables.set(\"token\", token)\r",
 					"\r",
 					"\r",
-					"token_emptyCart = \"eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3NjkxMjMyIiwiaWF0IjoxNzQ4Njk3MzcyLCJleHAiOjE3NDg3ODM3NzIsImlzcyI6Imh0dHBzOi8vdGlraS52biIsImN1c3RvbWVyX2lkIjoiNzY5MTIzMiIsImVtYWlsIjoiIiwiY2xpZW50X2lkIjoidGlraS1zc28iLCJuYW1lIjoiNzY5MTIzMiIsInNjb3BlIjoic3NvIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIn0.h4PQGMCXkF4pq6WsVyTYFgbV4BcgsuTaJ87CXiDBjNFa9GMtDJPPjeOZTdfh50PLeBqBUC5zvzo8V71wynH2_Z3LVOJb6fvzR5UBMsyY6k080WfjHd0Aq5WKBwGfbVeB31xORrqS0iH5LpFa3wsoo1cz1hd01tSqhLqp-tb_Nlu-E0nMg_snk2xVdXI1l9JMm7ok7dAJAkABK4ZOAuyAIl1qQC3KYe--UW7h1cD7aj5iv9KaacXjZ-THQHClRbtS3ma4KkvTG4LIyz-m29rO_lRbePQWJFMVy8oCmuwn_WOCkCc34-Ail1jo3Vn7EiYq-K99e7Ui2vURdN0_gXkOpm8DFMc2tWjd3oPmSut_maQnh7S7clJfW5xddQyVOSqXX37zlpaPwP2wqDw-UZN9Mji0E-utqLQ3eGGJj6lbZlsjryxLE7nL882ybgVOy2stYaIFx9DtTlw_BDqFFWtg87zsESkmrhVoaEDjpckAIm33QUYUWCTCtGwKtSu6wnHMJ8TmUmkAndmY3PUAqbja7SAFH6sxA-4YLsxd49Kbo6YNJi_1up3jilV2HN6l8Q6WfMp54ypJJ6QBFNGCoPRc2Jf-b1c3NQR5rcrGM9XQzqFWBsMRGuaYiCvccQXnaOg5T8Wj2I3RdqlCN8fQ8t33cD6UurHYPf91H1R08qIw_Gw\"\r",
+					"token_emptyCart = \"eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI3NjkxMjMyIiwiaWF0IjoxNzQ4NzQwMjgyLCJleHAiOjE3NDg4MjY2ODIsImlzcyI6Imh0dHBzOi8vdGlraS52biIsImN1c3RvbWVyX2lkIjoiNzY5MTIzMiIsImVtYWlsIjoiIiwiY2xpZW50X2lkIjoidGlraS1zc28iLCJuYW1lIjoiNzY5MTIzMiIsInNjb3BlIjoic3NvIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIn0.dFkMox9KqTCCEAsBk126TgSPWy9WrSzZ1fZI7RB-0W51NBaMXJqe11h7GH7OJYbayGnsTq5G6ItrF6tuAfYu_GyD2wqjqPjKw9lo4Pki7HOqbq9VYHv9DrOwbZ_SckcjKho9Uv3IiVUpMfdQ5V6zfT4FUAJNqM8-e-EoOfwM3QxzU485Bu-pcEMSyRRmqXE7aM0-rWdLs7iOqe_NCCzjsolYcuJS0hCOsM9MFkD7IPeVFoMbQqcG00hgmLqymkG04VZoZjmwnwBmo17HLOPRZnTM_nm3z6LumAe6kYAvH_miljPsus_LsJ1ymLddkMFqb5DLwVNose72m2zL1KbqGUJIqDOtyih_rcOzwzRFRU2OX3PdhG7MCX4tXW3oeMdiYd9zhAe8psD4A4r01mBkyMlVbOir_SBCiTbYO0jZYjNIpdEGpTKSdSUY4Z52Juw54tRyWpxCog_Kt1ZvwbCtc6Su0zm0EA3p4gaK-FpuarrzGOeywSzOWQ_ObQ3ICELQcJ6SV53M6lZ5aAClB8yQkcT6W14AGCmTu6mk037nEHgZP7HGQv60yrOUi8JUf-jUXh92cWLublucUHi7rPl5IsEPPyd0cIYAtQpnGQYpjb6YrhPmQtzNmlLHQPhPUKDWVfgEGc3P531CdYtJXyscKUlYS16NczfOBaDFvDOmEIQ\"\r",
 					"pm.collectionVariables.set(\"token_emptyCart\", token_emptyCart)"
 				]
 			}
@@ -6389,7 +6389,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "26326ef4-0a91-4392-b1b8-4fc4d5538464",
+				"id": "7b4e4ae2-2245-4158-8eb8-bc00d6058b84",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
