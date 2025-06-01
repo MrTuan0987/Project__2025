@@ -3603,7 +3603,7 @@
 											"});\r",
 											"\r",
 											"// Set biến collection về số lượng hiện tại\r",
-											"// pm.collectionVariables.set(\"current_qty\", qtyToAdd);\r",
+											"pm.collectionVariables.set(\"current_qty\", qtyToAdd);\r",
 											""
 										],
 										"type": "text/javascript",
@@ -3669,7 +3669,7 @@
 											"});\r",
 											"\r",
 											"// Set biến collection về số lượng hiện tại\r",
-											"// pm.collectionVariables.set(\"current_qty\", qtyToAdd);\r",
+											" pm.collectionVariables.set(\"current_qty\", qtyToAdd);\r",
 											""
 										],
 										"type": "text/javascript",
