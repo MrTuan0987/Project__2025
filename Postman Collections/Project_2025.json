@@ -2768,7 +2768,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"products\":[{\"product_id\":\"263989872\",\"qty\":1}]}",
+									"raw": "{\"products\":[{\"product_id\":\"263989872\",\"qty\":1}]}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
