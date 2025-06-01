@@ -1324,7 +1324,7 @@
 									"    body: {\r",
 									"        mode: 'raw',\r",
 									"        raw: JSON.stringify({\r",
-									"            product_id: \"263989872\",\r",
+									"            product_id: 263989872,\r",
 									"            parent_item_id: null,\r",
 									"            qty: 1\r",
 									"        })\r",
