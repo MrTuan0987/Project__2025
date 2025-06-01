@@ -2765,6 +2765,18 @@
 										"key": "Content-Type",
 										"value": "application/json",
 										"type": "text"
+									},
+									{
+										"key": "Pragma",
+										"value": "no-cache",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Expires",
+										"value": "0",
+										"type": "text",
+										"disabled": true
 									}
 								],
 								"body": {
