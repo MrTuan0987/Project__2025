@@ -3626,7 +3626,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"product_id\":\"263989872\",\"parent_item_id\":null,\"qty\":6}",
+									"raw": "{\"product_id\":263989872,\"parent_item_id\":null,\"qty\":5}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3702,7 +3702,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\"product_id\":\"263989872\",\"parent_item_id\":null,\"qty\":1}",
+									"raw": "{\"product_id\":263989872,\"parent_item_id\":null,\"qty\":1}",
 									"options": {
 										"raw": {
 											"language": "json"
