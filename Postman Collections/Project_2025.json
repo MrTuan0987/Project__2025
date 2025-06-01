@@ -1808,6 +1808,7 @@
 											"let jsonData = pm.response.json()\r",
 											"pm.test(\"Hiển thị Cart đúng SP, đúng SL\", ()=>{    \r",
 											"    pm.expect(jsonData.items[0].qty).to.eql(parseInt(pm.collectionVariables.get(\"current_qty\")))\r",
+											"    console.log(\"currentQty\", pm.collectionVariables.get(\"current_qty\"))\r",
 											"    pm.expect(jsonData.items[0].product_name).to.include(\"Máy tính cầm tay, máy tính để bàn tính tiền 12 số Deli\")\r",
 											"    pm.expect(jsonData.items[0].list_price).to.eql(142200)\r",
 											"    pm.expect(jsonData.items[1].qty).to.eql(1)\r",
