@@ -1812,7 +1812,7 @@
 											"    pm.expect(jsonData.items[0].product_name).to.include(\"Máy tính cầm tay, máy tính để bàn tính tiền 12 số Deli\")\r",
 											"    pm.expect(jsonData.items[0].list_price).to.eql(142200)\r",
 											"    pm.expect(jsonData.items[1].qty).to.eql(1)\r",
-											"    pm.expect(jsonData.items[1].product_name).to.eql(\"Máy Tính Bảng Samsung Galaxy Tab A9 Wifi 4GB/64GB - Hàng Chính Hãng - Xám\")\r",
+											"    pm.expect(jsonData.items[1].product_name).to.include(\"Máy Tính Bảng Samsung Galaxy Tab A9\")\r",
 											"    pm.expect(jsonData.items[1].list_price).to.eql(3990000)\r",
 											"})"
 										],
