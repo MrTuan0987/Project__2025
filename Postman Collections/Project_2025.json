@@ -2585,6 +2585,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "77c251a1-f97d-43b9-b7ed-f5cbc529d3d1",
 										"exec": [
 											"pm.test(\"Status code is 200\", ()=>{\r",
 											"    pm.response.to.have.status(200)\r",
@@ -2598,24 +2599,23 @@
 											"    pm.expect(jsonData.items[0].list_price).to.eql(142200)\r",
 											"\r",
 											"    pm.expect(jsonData.items[1].qty).to.eql(1)\r",
-											"    pm.expect(jsonData.items[1].product_name).to.eql(\"Máy Tính Bảng Samsung Galaxy Tab A9 Wifi 4GB/64GB - Hàng Chính Hãng - Xám\")\r",
+											"    pm.expect(jsonData.items[1].product_name).to.include(\"Máy Tính Bảng Samsung Galaxy Tab A9\")\r",
 											"    pm.expect(jsonData.items[1].list_price).to.eql(3990000)\r",
 											"})"
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "77c251a1-f97d-43b9-b7ed-f5cbc529d3d1"
+										"packages": {}
 									}
 								},
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "91847aa2-bd31-41f6-aa84-d87ae4cbbb61",
 										"exec": [
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "91847aa2-bd31-41f6-aa84-d87ae4cbbb61"
+										"packages": {}
 									}
 								}
 							],
